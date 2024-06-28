@@ -4,14 +4,14 @@ import 'package:news_application/models/article.dart';
 import 'package:news_application/models/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class NewsPage extends StatefulWidget {
-  const NewsPage({super.key});
+class NewsPages extends StatefulWidget {
+  const NewsPages({super.key});
 
   @override
-  State<NewsPage> createState() => _NewsPageState();
+  State<NewsPages> createState() => _NewsPageState();
 }
 
-class _NewsPageState extends State<NewsPage> {
+class _NewsPageState extends State<NewsPages> {
   final Dio dio = Dio();
 
   List<Article> articles = [];

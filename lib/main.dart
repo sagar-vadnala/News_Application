@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:news_application/auth/auth.dart';
 import 'package:news_application/firebase_options.dart';
+import 'package:news_application/pages/home_screen.dart';
 import 'package:news_application/provider/favouriteProvider.dart';
 import 'package:news_application/themes/theme_provider.dart';
 import 'package:provider/provider.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AuthPage(),
+      home: HomeScreen(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
